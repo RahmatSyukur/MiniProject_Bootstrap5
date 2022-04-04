@@ -44,9 +44,11 @@
         </div>
       </nav>
       <!-- Alert -->
-      <div class="alert alert-info" role="alert">
-        Komunitas Pecinta Vespa
+      <!-- <div id="judul"> -->
+      <div class="alert" role="alert">
+        <h1 id="judul">Komunitas Pecinta Vespa</h1>
       </div>
+      <!-- </div> -->
       <!--  -->
 
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -281,24 +283,25 @@
         <form class="row g-3">
             <div class="col-auto">
               <label for="staticEmail2" class="visually-hidden">Merk Vespa</label>
-              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Name">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Merk Vespa">
             </div>
             <div class="col-auto">
               <label for="inputPassword2" class="visually-hidden">Vespa</label>
-              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Vespa">
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+              <button type="submit" id="vespa" class="btn btn-danger mb-3">Search</button>
             </div>
-          </form>
+        
 
           <div class="footer">
             <!-- Start Footer -->
         
-             <p>&copy; Rahmat 2022</p>
+             <p>&copy;Copyright Rahmat 2022</p>
     
             <!-- End Footer -->
          </div>
+        </form>
 
 
        </section>
@@ -307,5 +310,27 @@
   </footer>
   </div>
 </body>
+
+<script>
+  // const judul = document.getElementById('judul')
+  // judul.innerHTML = 'Vespa Rahmat';
+  // judul.style.color = 'lightblue';
+  // judul.style.backgroundColor = 'salmon';
+
+  // const judul = document.querySelector('#judul');
+  // judul.style.color = 'lightblue';
+  // judul.style.backgroundColor = 'salmon';
+
+  const judul = document.getElementsByTagName('h1')[0];
+  judul.setAttribute('name','Rahmat');
+
+  const vespa = document.getElementById('vespa');
+  vespa.onclick = function() {
+    alert('masukkan merk vespa terlebih dahulu')
+  }
+</script>
+
+
+
 </html>
 
